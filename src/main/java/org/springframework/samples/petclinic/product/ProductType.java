@@ -16,7 +16,6 @@ import lombok.Setter;
 @Table(name = "products_types")
 public class ProductType extends BaseEntity{
     @Size(min = 3, max = 50)
-	@Column(name = "name")
-    @Unique
+	@Column(name = "name", unique= true)
 	private String name;
 }
